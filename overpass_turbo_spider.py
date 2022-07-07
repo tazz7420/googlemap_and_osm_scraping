@@ -13,9 +13,6 @@ def restaurant_buffer(dis, lat, lon):
     # POST封包內容
     dataForm = f'''data=[out:json][timeout:25];
         (
-            # 節點node 線段way
-            # 關鍵字索引[xxx = ???]
-            # 環域分析 距離 緯度 經度
             node["amenity" = "restaurant"](around: {distance}, {lat}, {lon});
             node["amenity" = "fast_food"](around: {distance}, {lat}, {lon});
         );
