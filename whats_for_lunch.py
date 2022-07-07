@@ -24,9 +24,9 @@ print(restaurant_list[random_one]['name'])
 # folium畫地圖 取得地圖中心位置
 fmap = folium.Map(location=[restaurant_list[random_one]['lat']/2 + lat/2, restaurant_list[random_one]['lon']/2 + lon/2], zoom_start=17)
 # 加入地點的圖徽
-fmap.add_child(folium.Marker(location=[lat, lon],popup='現在位置',icon=folium.Icon(icon='helicopter', # Icon類型
+fmap.add_child(folium.Marker(location=[lat, lon],popup='現在位置',icon=folium.Icon(icon='paper-plane', # Icon類型
                                     color='green', # Marker顏色
-                                    prefix='fa-helicopter'))) # 使用Font Awesome Icons
+                                    prefix='fa'))) # 使用Font Awesome Icons
 fmap.add_child(folium.Marker(location=[restaurant_list[random_one]['lat'], restaurant_list[random_one]['lon']],popup=restaurant_list[random_one]['name']))
 
 # osmnx透過中心點抓路網
