@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0cf66cc57b78d4d3cb81f3fe9f3adc32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0cf66cc57b78d4d3cb81f3fe9f3adc32" ></div>
+        
+</body>
+<script>    
+    
+            var map_0cf66cc57b78d4d3cb81f3fe9f3adc32 = L.map(
+                "map_0cf66cc57b78d4d3cb81f3fe9f3adc32",
+                {
+                    center: [25.03105255, 121.54349454999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb913f50bfa0c7a30faeea9f080d0f5b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0cf66cc57b78d4d3cb81f3fe9f3adc32);
+        
+    
+            var marker_8aea997db56b93dd0dbb3cc8d9995fc1 = L.marker(
+                [25.033096799999992, 121.5437484],
+                {}
+            ).addTo(map_0cf66cc57b78d4d3cb81f3fe9f3adc32);
+        
+    
+            var icon_5b90121a76c01233b642b3bede855de9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "helicopter", "iconColor": "white", "markerColor": "green", "prefix": "fa-helicopter"}
+            );
+            marker_8aea997db56b93dd0dbb3cc8d9995fc1.setIcon(icon_5b90121a76c01233b642b3bede855de9);
+        
+    
+        var popup_db8165d55eb6597f2b94221b830ab8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f2ecc6f0e6e896c8ec0131a2bc69ce4 = $(`<div id="html_2f2ecc6f0e6e896c8ec0131a2bc69ce4" style="width: 100.0%; height: 100.0%;">現在位置</div>`)[0];
+            popup_db8165d55eb6597f2b94221b830ab8e0.setContent(html_2f2ecc6f0e6e896c8ec0131a2bc69ce4);
+        
+
+        marker_8aea997db56b93dd0dbb3cc8d9995fc1.bindPopup(popup_db8165d55eb6597f2b94221b830ab8e0)
+        ;
+
+        
+    
+    
+            var marker_7d84eefe4f9b98e5026c660a15ad43b5 = L.marker(
+                [25.0290083, 121.5432407],
+                {}
+            ).addTo(map_0cf66cc57b78d4d3cb81f3fe9f3adc32);
+        
+    
+        var popup_c4bc4908d96c792fd9bad123c6e5ae36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7139ff4c9582fe2cb1d99312b789e372 = $(`<div id="html_7139ff4c9582fe2cb1d99312b789e372" style="width: 100.0%; height: 100.0%;">珍美味海鮮熱炒</div>`)[0];
+            popup_c4bc4908d96c792fd9bad123c6e5ae36.setContent(html_7139ff4c9582fe2cb1d99312b789e372);
+        
+
+        marker_7d84eefe4f9b98e5026c660a15ad43b5.bindPopup(popup_c4bc4908d96c792fd9bad123c6e5ae36)
+        ;
+
+        
+    
+    
+            var poly_line_215385c00aa19e0051e76495a4e55617 = L.polyline(
+                [[25.033096799999992, 121.5437484], [25.0331452, 121.5437637], [25.0331437, 121.5436723], [25.0331452, 121.5435321], [25.0327534, 121.5435252], [25.0327404, 121.5433974], [25.0318926, 121.5433879], [25.0311169, 121.5433766], [25.0310846, 121.5433763], [25.0310069, 121.5433751], [25.0302855, 121.5433614], [25.029953, 121.5433543], [25.0298587, 121.5433518], [25.0297416, 121.5433484], [25.0292664, 121.5433346], [25.0291833, 121.5433327], [25.0290083, 121.5432407]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 8}
+            ).addTo(map_0cf66cc57b78d4d3cb81f3fe9f3adc32);
+        
+</script>
