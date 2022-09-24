@@ -1,7 +1,7 @@
 # googlemap_and_osm_scraping
 
-為了方便使用，這裡提供docker file。
-使用者首先需要在電腦上安裝 docker ，然後執行下面的指令：
+為了方便使用，這裡提供dockerfile。
+使用者首先需要在電腦上安裝 docker ，然後到該檔案路徑下執行下面的指令：
 
 ### 指令
 
