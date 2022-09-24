@@ -1,5 +1,6 @@
 ARG CODE_VERSION=22.04
 FROM ubuntu:${CODE_VERSION}
+ARG DEBIAN_FRONTEND=noninteractive
 LABEL maintainer='whats_for_lunch'
 
 # switch working directory
@@ -22,7 +23,4 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
 # 安裝必要套件 (pip3 install -r 從檔案讀取要安裝的套件以及版本)
 RUN pip3 install -r requirements.txt
 
-# 啟動 container 時直接跑 flask app
-# 以下2種寫法都測試過可以使用
-#ENTRYPOINT FLASK_APP=/app/app.py flask run --host=0.0.0.0
-ENTRYPOINT [ "python3", "whats_for_lunch.py" ]
+ENTRYPOINT [ "python3", "./whats_for_lunch.py" ]
